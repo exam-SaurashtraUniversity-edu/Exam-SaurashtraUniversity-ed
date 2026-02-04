@@ -25,38 +25,23 @@ function openFatherPhoto() {
     window.location.href = "father.html";
 }
 
-/* FATHER PHOTO → DOWNLOAD PDF ON ANY CLICK */
-function downloadPDF() {
-    const link = document.createElement("a");
-    link.href = "myfile.pdf";       // Make sure myfile.pdf is in the same folder as father.html
-    link.download = "myfile.pdf";   // The filename it will save as
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-/* FATHER PHOTO → DOWNLOAD PDF WHEN CLICKING SPECIFIC AREA */
+/* FATHER PHOTO → DOWNLOAD PDF WHEN CLICKING BOTTOM-CENTER AREA */
 function checkDownload(e) {
-    let x = e.clientX;
-    let y = e.clientY;
+    // Get click position as percentage of viewport
+    let xPerc = e.clientX / window.innerWidth;
+    let yPerc = e.clientY / window.innerHeight;
 
-    // Define the clickable area at bottom center
-    // For 360px width and 800px height
-    // You can adjust width/height of the clickable area to match menu image
-    const areaWidth = 80;   // clickable width
-    const areaHeight = 50;  // clickable height
-    const centerX = 180;    // center X of the screen (360 / 2)
-    const bottomY = 750;    // bottom center Y (adjust to fit your image)
+    // Bottom-center clickable area (adjust percentages if needed)
+    const leftPerc = 0.35;   // 35% of screen width
+    const rightPerc = 0.65;  // 65% of screen width
+    const topPerc = 0.8;     // 80% from top of screen
+    const bottomPerc = 0.9;  // 90% from top of screen
 
-    const leftX = centerX - areaWidth / 2;
-    const rightX = centerX + areaWidth / 2;
-    const topY = bottomY - areaHeight / 2;
-    const bottomYArea = bottomY + areaHeight / 2;
-
-    if (x >= leftX && x <= rightX && y >= topY && y <= bottomYArea) {
-        // Trigger download
+    if (xPerc >= leftPerc && xPerc <= rightPerc && yPerc >= topPerc && yPerc <= bottomPerc) {
+        // Trigger PDF download
         const link = document.createElement("a");
-        link.href = "myfile.pdf";       // path to PDF
-        link.download = "myfile.pdf";   // filename
+        link.href = "myfile.pdf";       // path to your PDF file
+        link.download = "myfile.pdf";   // filename for download
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
