@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  width: 360px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* BACKGROUND IMAGES */
+.login {
+  background-image: url("images/login.jpg");
+}
+
+.profile {
+  background-image: url("images/profile.jpg");
+}
+
+.menu-page {
+  background-image: url("images/menu.jpg");
+}
+
+.me-photo {
+  background-image: url("images/me.jpg");
+}
+
+.father-photo {
+  background-image: url("images/father.jpg");
+}
+
+/* INPUTS + BUTTONS */
+input, button {
+  position: absolute;
+  background: transparent;
+  border: none;
+}
+
+/* EMAIL INPUT (70% Size) */
+.email {
+  top: 560px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  height: 35px;
+  
+  border: none; 
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* PASSWORD INPUT */
+.password {
+  top: 630px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  height: 35px;
+  
+  border: none; 
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* SIGN IN BUTTON */
+.signin {
+  top: 710px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  height: 35px;
+  
+}
+
+/* TOP LEFT MENU ICON CLICK AREA */
+.menu-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+}
+.email:focus,
+.password:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
