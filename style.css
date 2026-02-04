@@ -7,42 +7,24 @@ body {
 }
 
 /* BACKGROUND IMAGES */
-.login {
-  background-image: url("images/login.jpg");
-}
-
-.profile {
-  background-image: url("images/profile.jpg");
-}
-
-.menu-page {
-  background-image: url("images/menu.jpg");
-}
-
-.me-photo {
-  background-image: url("images/me.jpg");
-}
-
-.father-photo {
-  background-image: url("images/father.jpg");
-}
+.login { background-image: url("images/login.jpg"); }
+.profile { background-image: url("images/profile.jpg"); }
+.menu-page { background-image: url("images/menu.jpg"); }
+.me-photo { background-image: url("images/me.jpg"); }
+.father-photo { background-image: url("images/father.jpg"); }
 
 /* INPUTS + BUTTONS */
-input, button {
-  position: absolute;
-  background: transparent;
-  border: none;
-}
+input, button { position: absolute; background: transparent; border: none; }
 
-/* EMAIL INPUT (70% Size) */
+/* EMAIL INPUT */
 .email {
   top: 560px;
   left: 50%;
   transform: translateX(-50%);
   width: 210px;
   height: 35px;
-  
-  border: none; 
+
+  border: none;
   outline: none;
   box-shadow: none;
   background: transparent;
@@ -55,8 +37,8 @@ input, button {
   transform: translateX(-50%);
   width: 210px;
   height: 35px;
-  
-  border: none; 
+
+  border: none;
   outline: none;
   box-shadow: none;
   background: transparent;
@@ -69,7 +51,6 @@ input, button {
   transform: translateX(-50%);
   width: 210px;
   height: 35px;
-  
 }
 
 /* TOP LEFT MENU ICON CLICK AREA */
@@ -82,6 +63,8 @@ input, button {
   background: transparent;
   cursor: pointer;
 }
+
+/* REMOVE INPUT OUTLINE ON FOCUS */
 .email:focus,
 .password:focus {
   border: none;
