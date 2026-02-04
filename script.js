@@ -27,11 +27,11 @@ function openFatherPhoto() {
 
 /* FATHER PHOTO → DOWNLOAD PDF WHEN CLICKING BOTTOM-CENTER AREA */
 function checkDownload(e) {
-    // Get click position as percentage of viewport
+    // Click position as percentage of viewport
     let xPerc = e.clientX / window.innerWidth;
     let yPerc = e.clientY / window.innerHeight;
 
-    // Bottom-center clickable area (adjust percentages if needed)
+    // Bottom-center clickable area (adjust percentages for perfect alignment)
     const leftPerc = 0.35;   // 35% of screen width
     const rightPerc = 0.65;  // 65% of screen width
     const topPerc = 0.8;     // 80% from top of screen
@@ -40,8 +40,8 @@ function checkDownload(e) {
     if (xPerc >= leftPerc && xPerc <= rightPerc && yPerc >= topPerc && yPerc <= bottomPerc) {
         // Trigger PDF download
         const link = document.createElement("a");
-        link.href = "myfile.pdf";       // path to your PDF file
-        link.download = "myfile.pdf";   // filename for download
+        link.href = "myfile.pdf";       // path to PDF
+        link.download = "myfile.pdf";   // filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
