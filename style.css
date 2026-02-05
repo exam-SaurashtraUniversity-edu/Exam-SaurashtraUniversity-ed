@@ -51,7 +51,7 @@ input, button {
 /* SIGN IN BUTTON */
 .signin {
   top: 705px;
-  left: 51%;
+  left: 50%;
   transform: translateX(-50%);
   width: 205px;
   height: 33px;
