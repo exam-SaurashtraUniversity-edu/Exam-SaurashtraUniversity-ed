@@ -20,35 +20,27 @@ input, button {
   border: none; 
 }
 
-/* EMAIL INPUT */
+/* EMAIL */
 .email {
   top: 558px;
   left: 50%;
   transform: translateX(-50%);
   width: 210px;
   height: 35px;
-
-  border: none;
   outline: none;
-  box-shadow: none;
-  background: transparent;
 }
 
-/* PASSWORD INPUT */
+/* PASSWORD */
 .password {
   top: 630px;
   left: 50%;
   transform: translateX(-50%);
   width: 210px;
   height: 35px;
-
-  border: none;
   outline: none;
-  box-shadow: none;
-  background: transparent;
 }
 
-/* SIGN IN BUTTON */
+/* SIGN IN */
 .signin {
   top: 705px;
   left: 50%;
@@ -58,21 +50,22 @@ input, button {
   cursor: pointer;
 }
 
-/* TOP LEFT MENU ICON CLICK AREA */
+/* PROFILE MENU ICON */
 .menu-btn {
   position: absolute;
   top: 6px;
   left: 10px;
   width: 26px;
   height: 15px;
-  background: transparent;
   cursor: pointer;
 }
 
-/* REMOVE INPUT OUTLINE ON FOCUS */
-.email:focus,
-.password:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
+/* MENU PAGE → SMALL CLICK AREA (THIS IS IMPORTANT) */
+.menu-click {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 40px;
+  height: 15px;
+  cursor: pointer;
 }
