@@ -32,7 +32,6 @@ input, button {
   outline: none;
   box-shadow: none;
   background: transparent;
-  background: transparent;
 }
 
 /* PASSWORD INPUT */
@@ -52,10 +51,10 @@ input, button {
 /* SIGN IN BUTTON */
 .signin {
   top: 705px;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   width: 210px;
-  height: 35px;
+  height: 33px;
   cursor: pointer;
 }
 
@@ -63,7 +62,7 @@ input, button {
 .menu-btn {
   position: absolute;
   top: 5px;
-  left: 7px;
+  left: 8px;
   width: 28px;
   height: 15px;
   background: transparent;
