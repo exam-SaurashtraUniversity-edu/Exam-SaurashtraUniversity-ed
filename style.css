@@ -66,6 +66,7 @@ input, button {
   width: 30px;
   height: 30px;
   background: transparent;
+  cursor: pointer;
 }
 
 /* REMOVE INPUT OUTLINE ON FOCUS */
