@@ -75,4 +75,5 @@ input, button {
   border: none;
   outline: none;
   box-shadow: none;
+  background: transparent;
 }
