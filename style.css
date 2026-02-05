@@ -63,10 +63,9 @@ input, button {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: transparent;
-  cursor: pointer;
 }
 
 /* REMOVE INPUT OUTLINE ON FOCUS */
