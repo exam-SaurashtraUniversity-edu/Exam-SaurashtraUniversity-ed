@@ -51,7 +51,7 @@ input, button {
 
 /* SIGN IN BUTTON */
 .signin {
-  top: 710px;
+  top: 705px;
   left: 50%;
   transform: translateX(-50%);
   width: 210px;
@@ -63,9 +63,9 @@ input, button {
 .menu-btn {
   position: absolute;
   top: 5px;
-  left: 6px;
+  left: 7px;
   width: 28px;
-  height: 20px;
+  height: 15px;
   background: transparent;
   cursor: pointer;
 }
