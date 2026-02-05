@@ -3,7 +3,7 @@ function login() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
-    if (email === "a" && password === "s") {
+    if (email === "A" && password === "s") {
         window.location.href = "profile.html";
     } else {
         alert("Wrong email or password");
